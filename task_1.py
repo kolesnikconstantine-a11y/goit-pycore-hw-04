@@ -7,7 +7,6 @@ def total_salary(path):
     # Відкриття текстового файлу з явним вказівкам UTF-8 кодування
     with open(path, "r", encoding='utf-8') as fh:
         lines = [el.strip() for el in fh.readlines()]
-        #content = fh.read()
         total = 0
         for line in lines:
             data = line.split(',')
